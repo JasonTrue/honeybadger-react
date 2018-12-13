@@ -9,6 +9,7 @@ export default class BuggyComponent extends Component {
   }
 
   bug = () => {
+    console.log('setstate buggy')
     this.setState({error: true})
   }
   render () {
